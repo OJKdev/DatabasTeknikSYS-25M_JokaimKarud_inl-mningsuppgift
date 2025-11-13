@@ -7,8 +7,8 @@ Name
 ('KronJäst Leverantör AB'),
 ('Saltimporten Malmö AB'),
 ('Skånemejerier'),
-('VA SYD'),
-('Mormor Dagnys Bageri');
+('VA SYD');
+
 
 INSERT INTO Contacts(
 FirstName,
@@ -21,8 +21,7 @@ LastName
 ('Peter','Hall'),
 ('Markus', 'Lund'),
 ('Anders', 'Johansson'),
-('Mormor', 'Dagny');
-
+('Bengt', 'Lennartsson');
 
 
 INSERT INTO SupplierContacts(
@@ -36,7 +35,7 @@ ContactId
 (5,5),
 (6,6),
 (7,7),
-(8,8);
+(1,8);
 
 
 INSERT INTO PhoneNumbers(
@@ -49,7 +48,7 @@ PhoneNumber
 ('040-998877'),
 ('046-223344'),
 ('070-567893'),
-('030-564534');
+('060-098765');
 
 INSERT INTO ContactPhoneNumbers(
 ContactId,
@@ -74,7 +73,7 @@ Email
 ('emma.karlsson@saltimporten.se'),
 ('markus.lund@skanemejerier.se'),
 ('Anders.Johansson@vasyd.se'),
-('Mormor.Dagny@Dagnys.se');
+('bengt.lennartsson@kungsornen.se');
 
 INSERT INTO ContactEmails(
 ContactId,
@@ -237,35 +236,16 @@ INSERT INTO IngredientItems (
 INSERT INTO Recipes (
     Instructions
 ) VALUES (
-'Smält smör, blanda med mjölk till fingervarmt. 
-Lös upp jäst, tillsätt socker, salt och kardemumma. 
-Arbeta in mjöl till smidig deg. Låt jäsa 30 min. 
-Kavla, bred fyllning av smör, socker och kanel, 
-rulla ihop och skär bullar. Jäs 30 min till, 
-pensla med ägg, grädda 225 °C i 8–10 min.'
+'Instruktioner för 30 Kanelbullar'
 ),
 (
-'Lös upp jäst i ljummet vatten. 
-Tillsätt salt, olja och mjöl. 
-Arbeta till smidig deg, låt jäsa 40 min. 
-Forma frallor, jäs 30 min till. 
-Pensla med vatten, strö över frön om önskat. 
-Grädda 225 °C i 10–12 min tills gyllene.'
+'Instruktioner för 20 Frallor'
 ),
 (
-'Smält smör, rör ner kakao. 
-Vispa ägg och socker luftigt. 
-Blanda i mjöl, bakpulver, 
-vaniljsocker och smörblandning. 
-Fördela i formar, fyll två tredjedelar. 
-Grädda 200 °C i 10–12 min. 
-Låt svalna på galler.'
+'Instruktioner för 12 Chokladmuffins'
 ),
 (
-'Baka tårtbotten, dela i tre lager. 
-Fyll med vaniljkräm och vispad grädde. 
-Täck med marsipanlock. Pudra med florsocker. 
-Förvara kallt tills servering.'
+'Instruktioner för Prinsesstårta, 24 cm'
 );
 
 --Mormor Dagny Bageris Produkter
@@ -315,7 +295,7 @@ UnitTypeId
     'MD-004',
     150,
     3
-)
+);
 
 
 --Articklar från leverantörer
@@ -338,11 +318,8 @@ INSERT INTO SupplierItems (
 (13,3),
 (14,3),
 (15,1),
-(16,7),
-(17,8),
-(18,8),
-(19,8),
-(20,8);
+(16,7);
+
 
 --Produkter n:n med articklar
 INSERT INTO ProductItems (
@@ -552,7 +529,7 @@ INSERT INTO Items (
     UnitTypeId
 ) VALUES 
 (
-   'ARL564', 58, 1
+   'ARL564', 58, 2
    
 );
 

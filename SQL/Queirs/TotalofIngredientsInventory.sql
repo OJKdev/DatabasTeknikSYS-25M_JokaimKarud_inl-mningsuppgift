@@ -9,4 +9,5 @@ INNER JOIN IngredientItems ON IngredientItems.IngredientId = Ingredients.Id
 INNER JOIN Items ON IngredientItems.ItemId = Items.Id
 INNER JOIN Inventory ON Inventory.ItemId = Items.ID
 INNER JOIN UnitTypes ON UnitTypes.Id = Items.UnitTypeId
-GROUP BY Ingredients.Id;
+GROUP BY Ingredients.Id
+ORDER BY Quantity;

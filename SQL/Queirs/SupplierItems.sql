@@ -10,8 +10,6 @@ INNER JOIN Items ON Items.id = SupplierItems.ItemId
 INNER JOIN IngredientItems ON IngredientItems.ItemId = SupplierItems.ItemId
 INNER JOIN Ingredients ON Ingredients.Id = IngredientItems.IngredientId
 INNER JOIN UnitTypes ON UnitTypes.Id = Items.UnitTypeId
-
-
 ORDER BY Suppliers.Name ASC;
 
 

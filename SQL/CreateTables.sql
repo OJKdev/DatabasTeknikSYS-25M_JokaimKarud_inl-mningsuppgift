@@ -1,7 +1,7 @@
 --Droppa tabeller
 
 DROP TABLE IF EXISTS Suppliers;
-DROP TABLE IF EXISTS SuppliersContacts;
+DROP TABLE IF EXISTS SupplierContacts;
 DROP TABLE IF EXISTS Contacts;
 DROP TABLE IF EXISTS ContactPhoneNumbers;
 DROP TABLE IF EXISTS ContactEmails;

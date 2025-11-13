@@ -22,3 +22,5 @@ INNER JOIN ContactPhoneNumbers ON ContactPhoneNumbers.ContactId = Contacts.Id
 INNER JOIN ContactEmails ON ContactEmails.ContactId = Contacts.Id
 INNER JOIN PhoneNumbers ON ContactPhoneNumbers.PhoneNumberId = PhoneNumbers.Id
 INNER JOIN Emails ON ContactEmails.EmailId = Emails.Id
+GROUP BY Items.ItemNumber
+ORDER BY Ingredients.Name, Quantity ASC;
