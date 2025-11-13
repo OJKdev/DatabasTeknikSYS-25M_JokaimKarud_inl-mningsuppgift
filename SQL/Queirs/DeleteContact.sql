@@ -6,12 +6,12 @@
 -- Vi har också fått fram Id till hans uppgifter,
 -- så som hans emailId och PhoneNumberId
 
-DELETE FROM ContactEmails WHERE ContactId = 9;
-DELETE FROM Emails WHERE Id = 9;
+DELETE FROM ContactEmails WHERE ContactId = 8;
+DELETE FROM Emails WHERE Id = 8;
 DELETE FROM ContactPhoneNumbers WHERE ContactId = 9;
-DELETE FROM PhoneNumbers WHERE Id = 9;
-DELETE FROM SupplierContacts WHERE ContactId = 9;
-DELETE FROM Contacts WHERE Id = 9;
+DELETE FROM PhoneNumbers WHERE Id = 8;
+DELETE FROM SupplierContacts WHERE ContactId = 8;
+DELETE FROM Contacts WHERE Id = 8;
 
 
 
