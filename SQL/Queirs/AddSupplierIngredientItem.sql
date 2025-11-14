@@ -1,5 +1,6 @@
---Lägg till ingrediens hos leverantör
--- (Köper in mjöl från ytterligare en leverantör)
+--Lägg till ingrediens hos leverantör,
+--Köper in mjöl från ytterligare en leverantör
+--(Dessa queries är inte körda vid inlämmning)
 
 --anger itemNumber, pris och enhetstyp där 1 är kg
 INSERT INTO Items (
@@ -11,7 +12,7 @@ INSERT INTO Items (
    'DS-734', 13, 1
    
 );
---Vet att nästa item fick Id 22
+--Vet att ovan item kommer få Id 22
 INSERT INTO SupplierItems (
     SupplierId,
     ItemId
@@ -34,3 +35,8 @@ Quantity
 (
     22, 30
 );
+
+--Visa den nya Råvaro-artickeln
+SELECT * FROM Items
+INNER JOIN IngredientItems ON IngredientItems.ItemId = Items.Id
+WHERE Items.Id = 22;

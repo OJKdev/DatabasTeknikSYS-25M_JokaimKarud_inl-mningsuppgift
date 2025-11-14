@@ -1,4 +1,5 @@
 --Lägg till instruktioner för recept
+--(Dessa queries är inte körda vid inlämmning)
 
 --Plockar fram Products tabellen för att se receptens Id
 SELECT * FROM products;

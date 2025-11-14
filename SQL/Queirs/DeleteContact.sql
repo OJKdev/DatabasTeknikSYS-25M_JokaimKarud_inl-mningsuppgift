@@ -5,6 +5,7 @@
 -- Begnt Lennartssons Id i våran contacts-tabell
 -- Vi har också fått fram Id till hans uppgifter,
 -- så som hans emailId och PhoneNumberId
+--(Denna query är inte körd vid inlämmning)
 
 DELETE FROM ContactEmails WHERE ContactId = 8;
 DELETE FROM Emails WHERE Id = 8;

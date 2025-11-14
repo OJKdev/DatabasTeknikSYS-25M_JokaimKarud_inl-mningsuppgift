@@ -22,12 +22,11 @@ WHERE Recipes.id = 4;
 SELECT 
     Products.Name AS 'Recept',
     Recipes.Instructions AS 'Instruktioner',
-    GROUP_CONCAT(Ingredients.Name || ' (' || RecipeIngredients.Quantity || ' ' || UnitTypes.Value || ')', ', ') 
+    GROUP_CONCAT(RecipeIngredients.Quantity || ' ' || UnitTypes.Value || ' ' ||  Ingredients.Name, ', ') 
         AS 'Ingredienser'
 FROM Recipes 
 INNER JOIN Products ON Recipes.Id = Products.RecipeId
 INNER JOIN RecipeIngredients ON Recipes.Id = RecipeIngredients.RecipeId
 INNER JOIN Ingredients ON Ingredients.Id = RecipeIngredients.IngredientId
 INNER JOIN UnitTypes ON UnitTypes.Id = RecipeIngredients.UnitTypeId
-WHERE Recipes.Id = 4
 GROUP BY Recipes.Id;

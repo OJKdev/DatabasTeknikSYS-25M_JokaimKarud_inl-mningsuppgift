@@ -1,4 +1,4 @@
---Hämta varje artickel från leverantörer
+--Hämta varje artickel med pris från leverantörer
 SELECT 
 Suppliers.Name as 'Leverantör', 
 ItemNumber as 'Artikelnummer',

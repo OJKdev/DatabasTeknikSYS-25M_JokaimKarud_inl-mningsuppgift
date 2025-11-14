@@ -21,7 +21,7 @@ LastName
 ('Peter','Hall'),
 ('Markus', 'Lund'),
 ('Anders', 'Johansson'),
-('Bengt', 'Lennartsson');
+('Bengt', 'Lennartsson'); -- Extra person som används i delete-exempel
 
 
 INSERT INTO SupplierContacts(
@@ -35,7 +35,7 @@ ContactId
 (5,5),
 (6,6),
 (7,7),
-(1,8);
+(1,8); -- Bengt Lennartsson
 
 
 INSERT INTO PhoneNumbers(
@@ -445,40 +445,48 @@ CityId
 );
 INSERT INTO Addresses (
 AddressLine,
-PostalCodeId
+PostalCodeId,
+AddressTypeId
 ) VALUES 
 (
     'Gatan 1',
+    1,
     1
 ),
 (
     'Vägen 2',
-    2
+    2,
+    1
 ),
 
 (
     'Gränden 3',
-    3
+    3,
+    1
 ),
 
 (
     'Allén 4',
-    4
+    4,
+    1
 ),
 
 (
     'Stigen 5',
-    5
+    5,
+    1
 ),
 
 (
     'Grändstigen 6',
-    6
+    6,
+    1
 ),
 
 (
     'Gatovägen 7',
-    7
+    7,
+    1
 );
 
 INSERT INTO SupplierAddresses (

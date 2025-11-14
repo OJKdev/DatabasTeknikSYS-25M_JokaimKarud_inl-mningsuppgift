@@ -92,9 +92,11 @@ CREATE TABLE PostalCodes (
 
 CREATE TABLE Addresses (
     Id INTEGER PRIMARY KEY AUTOINCREMENT,
-    AddressLine VARCHAR(50) NOT NULL,
+    AddressLine VARCHAR(50) NOT NULL UNIQUE,
     PostalCodeId INTEGER NOT NULL,
+    AddressTypeId NOT NULL,
     FOREIGN KEY (PostalCodeId) REFERENCES PostalCodes (Id)
+    FOREIGN KEY (AddressTypeId) REFERENCES AddressTypes (Id)
 );
 
 
